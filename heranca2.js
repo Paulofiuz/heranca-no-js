@@ -5,10 +5,10 @@
 Object.prototype.attr0 = 'z';
 
 const avo = { attr1: 'A' };
-const pai = { __proto__: avo, attr2: 'B' }; // Corrigido: "Attr2" -> "attr2"
-const filho = { __proto__: pai, attr3: 'C' }; // Corrigido: "Attr3" -> "attr3"
+const pai = { __proto__: avo, attr2: 'B' }; 
+const filho = { __proto__: pai, attr3: 'C' }; 
 
-console.log(filho.attr0); // z (herdado de Object.prototype)
+console.log(filho.attr0); 
 
 // Exemplo com carro
 const carro = {
@@ -45,7 +45,7 @@ Object.setPrototypeOf(volvo, carro);
 
 // Teste
 ferrari.acelerarMais(100);
-console.log(ferrari.status()); // 100km/h de 324 km/h
+console.log(ferrari.status());
 
 volvo.acelerarMais(80);
-console.log(volvo.status()); // V40: 80km/h de 200 km/h
+console.log(volvo.status());
